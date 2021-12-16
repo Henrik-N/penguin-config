@@ -1,13 +1,13 @@
+pub use traits::PenguinConfig;
+pub use deserializer::Deserializer;
+
+#[cfg(feature = "penguin-config-derive")]
+pub use penguin_config_derive::PenguinConfigFile;
+
 pub use prelude::*;
 mod prelude {
     use std::fs::File;
     use std::io::Read;
-
-    #[cfg(feature = "penguin-config-derive")]
-    pub use penguin_config_derive::PenguinConfigFile;
-
-    pub use super::traits::PenguinConfig;
-    pub use super::deserializer::Deserializer;
 
     pub use serde::Deserialize;
 
@@ -18,7 +18,6 @@ mod prelude {
         json
     }
 }
-
 
 mod traits {
     pub trait PenguinConfig {
