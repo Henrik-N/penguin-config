@@ -1,8 +1,3 @@
-pub use traits::PenguinConfig;
-pub use deserializer::Deserializer;
-
-#[cfg(feature = "penguin-config-derive")]
-pub use penguin_config_derive::PenguinConfigFile;
 
 pub use prelude::*;
 mod prelude {
@@ -10,6 +5,11 @@ mod prelude {
     use std::io::Read;
 
     pub use serde::Deserialize;
+    pub use traits::PenguinConfig;
+    pub use deserializer::Deserializer;
+
+    #[cfg(feature = "penguin-config-derive")]
+    pub use penguin_config_derive::PenguinConfigFile;
 
     pub fn read_json(file_path: &str) -> String {
         let mut file = File::open(file_path).expect("couldn't open file");
