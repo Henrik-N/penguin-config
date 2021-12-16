@@ -27,7 +27,7 @@ penguin-config = { git = "https://github.com/Henrik-N/penguin-config", features 
 use penguin_config::*;
 
 #[derive(Deserialize, PenguinConfigFile)]
-#[penguin_config_file_path(path = "window_config.json")]
+#[penguin_config(path = "window_config.json")]
 pub struct WindowConfig {
     pub width: u32,
     pub height: u32,
