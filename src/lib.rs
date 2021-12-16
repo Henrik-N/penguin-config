@@ -5,8 +5,8 @@ mod prelude {
     use std::io::Read;
 
     pub use serde::Deserialize;
-    pub use traits::PenguinConfig;
-    pub use deserializer::Deserializer;
+    pub use crate::traits::PenguinConfig;
+    pub use crate::deserializer::Deserializer;
 
     #[cfg(feature = "penguin-config-derive")]
     pub use penguin_config_derive::PenguinConfigFile;
