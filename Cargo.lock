@@ -67,9 +67,9 @@ dependencies = [
 [[package]]
 name = "penguin-config-derive"
 version = "0.1.0"
-source = "git+https://github.com/Henrik-N/penguin-config-derive#9937b67d02471a09aa3f546072cc1bf95d9178ce"
 dependencies = [
  "darling",
+ "proc-macro2",
  "quote",
  "syn",
 ]

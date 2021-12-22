@@ -7,17 +7,14 @@ license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[features]
-derive = ["penguin-config-derive"]
+[workspace]
+members = ["penguin-config-derive"]
 
-[dependencies.penguin-config-derive]
-git = "https://github.com/Henrik-N/penguin-config-derive"
-optional = true
-
+[dependencies] 
+# ----- Derive macro ----- #
+penguin-config-derive = { path = "penguin-config-derive" }
 
 # ----- Serializiation ----- #
-[dependencies.serde]
-version = "1.0"
-features = ["serde_derive"]
-[dependencies.serde_json]
-version = "1.0"
+serde = { version = "1.0", features = ["serde_derive"] }
+serde_json = { version = "1.0" }
+
