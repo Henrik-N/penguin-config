@@ -7,9 +7,8 @@ Penguin-config simplifies the creation of config files using [serde](https://git
 #### Cargo.toml
 ```toml
 [dependencies]
-serde = { version = "1.0", features = ["serde_derive"] }
-serde_json = { version = "1.0" }
-penguin-config = { git = "https://github.com/Henrik-N/penguin-config" }
+serde = "1.0"
+penguin-config = "0.1.1"
 ```
 
 ## Usage

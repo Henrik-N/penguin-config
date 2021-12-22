@@ -1,6 +1,6 @@
 [package]
 name = "penguin-config"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Henrik Nilsson <github.com/Henrik-N>"]
 edition = "2021"
 license = "MIT"
