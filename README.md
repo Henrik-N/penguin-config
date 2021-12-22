@@ -18,7 +18,7 @@ penguin-config = { git = "https://github.com/Henrik-N/penguin-config", features 
 ```json
 {
     "width": 640,
-    "height": 400,
+    "height": 400
 }
 ```
 
