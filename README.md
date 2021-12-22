@@ -34,7 +34,7 @@ pub struct WindowConfig {
 }
 
 pub fn read_window_config() {
-    let config = WindowConfig::read_config();
+    let config: WindowConfig = WindowConfig::read_config();
     
     assert_eq!(config.width, 640);
     assert_eq!(config.height, 400);
