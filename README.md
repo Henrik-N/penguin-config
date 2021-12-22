@@ -28,12 +28,12 @@ use penguin_config::*;
 
 #[derive(Deserialize, PenguinConfigFile)]
 #[penguin_config(path = "window_config.json")]
-pub struct WindowConfig {
-    pub width: u32,
-    pub height: u32,
+struct WindowConfig {
+    width: u32,
+    height: u32,
 }
 
-pub fn read_window_config() {
+fn read_window_config() {
     let config: WindowConfig = WindowConfig::read_config();
     
     assert_eq!(config.width, 640);
