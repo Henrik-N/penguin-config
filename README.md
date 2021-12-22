@@ -40,3 +40,6 @@ fn read_window_config() {
     assert_eq!(config.height, 400);
 }
 ```
+
+## License
+Licensed under [MIT](https://github.com/Henrik-N/penguin-config). Do whatever you want with it :)
