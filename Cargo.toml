@@ -10,12 +10,13 @@ repository = "https://github.com/Henrik-N/penguin-config"
 keywords = ["penguin-engine", "config", "configuration", "serde", "serde_json"]
 categories = ["config"]
 
-[workspace]
-# ----- Derive macro ----- #
-members = ["penguin-config-derive"]
-default-members = ["penguin-config-derive"]
+[lib]
 
 [dependencies]
+# ----- Derive macro ----- #
+penguin-config-derive = { version = "0.1.1", path = "penguin-config-derive"}
+
 # ----- Serializiation ----- #
 serde = { version = "1.0", features = ["serde_derive"] }
 serde_json = { version = "1.0" }
+
