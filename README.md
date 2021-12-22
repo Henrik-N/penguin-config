@@ -14,14 +14,13 @@ penguin-config = { git = "https://github.com/Henrik-N/penguin-config" }
 
 ## Usage
 
-## Example config file
-#### window_config.json
+##### window_config.json
 ```json
 { "width": 640, "height": 400 }
 ```
 
-## Using derive macros
-#### Generating a config file
+### Using derive macros
+##### Generating a config file
 ```rust
 use penguin_config::*;
 
@@ -38,7 +37,7 @@ fn generate_config() {
 }
 ```
 
-#### Reading a config file
+##### Reading a config file
 ```rust
 use penguin_config::*;
 
@@ -58,8 +57,8 @@ fn read_config() {
 ```
 
 
-## Using traits
-#### Generating a config file
+### Using traits
+##### Generating a config file
 ```rust
 use penguin_config::*;
 
@@ -76,7 +75,7 @@ impl PenguinConfigGenerate for WindowConfig {
 }
 ```
 
-#### Reading a config file
+##### Reading a config file
 ```rust
 use penguin_config::*;
 
