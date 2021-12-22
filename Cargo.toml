@@ -6,6 +6,9 @@ edition = "2021"
 license = "MIT"
 description = "Read json files as Rust structs with a simple derive macro."
 repository = "https://github.com/Henrik-N/penguin-config"
+#homepage = "https://github.com/Henrik-N/penguin-config"
+#documentation = "https://github.com/Henrik-N/penguin-config"
+
 
 keywords = ["penguin-engine", "config", "configuration", "serde", "serde_json"]
 categories = ["config"]
