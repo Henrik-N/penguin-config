@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Henrik Nilsson <github.com/Henrik-N>"]
 edition = "2021"
 license = "MIT"
+include = ["/penguin-config-derive"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
