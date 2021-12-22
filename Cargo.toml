@@ -4,18 +4,18 @@ version = "0.1.0"
 authors = ["Henrik Nilsson <github.com/Henrik-N>"]
 edition = "2021"
 license = "MIT"
-include = ["/penguin-config-derive"]
+description = "Read json files as Rust structs with a simple derive macro."
+repository = "https://github.com/Henrik-N/penguin-config"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+keywords = ["penguin-engine", "config", "configuration", "serde", "serde_json"]
+categories = ["config"]
 
 [workspace]
-members = ["penguin-config-derive"]
-
-[dependencies] 
 # ----- Derive macro ----- #
-penguin-config-derive = { path = "penguin-config-derive" }
+members = ["penguin-config-derive"]
+default-members = ["penguin-config-derive"]
 
+[dependencies]
 # ----- Serializiation ----- #
 serde = { version = "1.0", features = ["serde_derive"] }
 serde_json = { version = "1.0" }
-
