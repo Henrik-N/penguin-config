@@ -42,4 +42,4 @@ fn read_window_config() {
 ```
 
 ## License
-Licensed under [MIT](https://github.com/Henrik-N/penguin-config). Do whatever you want with it :)
+Licensed under [MIT](https://github.com/Henrik-N/penguin-config/blob/master/LICENSE). Do whatever you want with it :)
